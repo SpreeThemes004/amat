@@ -1,0 +1,246 @@
+.bg-full-width {
+    --color-background: 247, 247, 247;
+}
+
+.media-content-wrap > div + div {
+    margin-top: 32px;
+}
+
+.about-text-content > * + * {
+    margin-top: 16px;
+}
+
+.media-content-wrap .about-text-content {
+    max-width: 90%;
+}
+
+.deferred-poster-content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.deferred-poster-button {
+    border: 1px solid rgba(0, 0, 0, 1);
+    width: 120px;
+    height: 120px;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.poster-content-text {
+    max-width: 500px;
+    margin-left: 32px;
+}
+
+.product-popup-modal__content-info.video-popup {
+    padding: 10px;
+}
+
+.product-popup-modal__content-info.video-popup .video-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.product-popup-modal__content-info.video-popup .video-box video{
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--bs-gutter-x);
+    row-gap: 24px;
+}
+
+.about-grid .grid-image img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-grid .grid-text {
+    order: 9999;
+}
+
+.about-grid .grid-text.order-reverse {
+    order: -9999;
+}
+
+.about-text-content.place-self {
+    place-self: start end;
+    padding-left: 80px;
+}
+
+.order-reverse .about-text-content.place-self {
+    place-self: start start;
+    padding-right: 100px;
+    padding-left: 0;
+}
+
+.bg-full-width {
+    background-color: rgba(var(--color-background), 1);
+    padding: 80px 0;
+}
+
+.about-accordian {
+    display: block;
+    margin-top: 32px;
+}
+
+.about-accordian > div + div {
+    margin-top: 16px;
+}
+
+.about-acc-item:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 16px;
+}
+
+.counter-up-header {
+    text-align: center;
+}
+
+.counter-up-list {
+    margin-top: 42px;
+}
+
+.counter-up-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+// About Style 2
+.about-style-2 .deferred-poster-content {
+    position: static;
+    transform: none;
+    margin: 0;
+}
+
+.about-style-2 .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+
+.team-info {
+    text-align: center;
+    margin-top: 16px;
+}
+
+
+@media (max-width: 991px) {
+    .count-number.text_42,
+    .poster-heading,
+    .about-heading {
+        font-size: 32px;
+    }
+
+    .poster-content-text {
+        max-width: 350px;
+    }
+
+    .deferred-poster-button {
+        width: 90px;
+        height: 90px;
+    }
+
+    .deferred-poster-button .icon_40 {
+        width: 32px;
+        height: 32px;
+    }
+
+    .about-text-content.place-self {
+        padding-left: 0;
+    }
+
+    .order-reverse .about-text-content.place-self {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .about-grid .about-text-content {
+        padding-top: 0;
+    }
+
+    .about-text-content .section-heading {
+        font-size: 28px;
+    }
+
+    .count-text.text_20,
+    .about-acc-item .text_18 {
+        font-size: 16px;
+    }
+
+    .about-acc-item .button-cta,
+    .about-acc-item .text_14 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+    .count-number.text_42, 
+    .poster-heading, .about-heading {
+        font-size: 28px;
+    }
+
+    .poster-content-text {
+        max-width: 300px;
+        margin-left: 20px;
+    }
+
+    .deferred-poster-button {
+        width: 70px;
+        height: 70px;
+    }
+
+    .poster-text, 
+    .about-acc-item .button-cta, 
+    .about-acc-item .text_14 {
+        font-size: 12px;
+    }
+
+    .about-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-grid .grid-text.order-reverse {
+        order: 9999; 
+    }
+
+    .count-text.text_20, 
+    .about-acc-item .text_18 {
+        font-size: 16px;
+    }
+
+    .counter-up-list {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    .deferred-poster-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .poster-content-text {
+        max-width: 200px;
+        margin-left: 10px;
+    }
+
+    .count-text {
+        text-align: center;
+    }
+}

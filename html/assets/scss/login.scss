@@ -1,0 +1,55 @@
+.login-wrap {
+    --color-background: 247, 247, 247;
+}
+
+.register-link.button-cta {
+    --font-cta-weight: 400;
+}
+
+.login-wrap {
+    width: 100%;
+    max-width: 556px;
+    margin: 0 auto;
+    background: rgba(var(--color-background), 1);
+    padding: 40px 60px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-header {
+    text-align: center;
+}
+
+.login-wrap > div {
+    margin-top: 24px;
+}
+
+.login-wrap .login-button {
+    width: 100%;
+}
+
+.login-wrap .register-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.login-wrap .register-link.button-cta {
+    font-weight: var(--font-cta-weight);
+}
+
+.login-wrap .login-text {
+    margin-top: 10px;
+    display: block;
+}
+
+.login-wrap .forget-password {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 425px) {
+    .login-wrap {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,241 @@
+.section-checkout .button-secondary {
+    --color-secondary-button-border: 0, 0, 0;
+}
+
+.checkout-total-area,
+.checkout-profile {
+    --color-background: 247, 247, 247;
+}
+
+.checkout-profile {
+    background: rgba(var(--color-background), 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 6px;
+}
+
+.checkout-profile .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 70%;
+    width: 70%;
+}
+
+.checkout-profile .user-img img {
+    min-width: 100px;
+    width: 100px;
+}
+
+.checkout-form-wrap {
+    margin-top: 42px;
+}
+
+.checkout-form-wrap > div + div {
+    margin-top: 24px;
+}
+
+.checkout-form fieldset {
+    margin-top: 24px;
+}
+
+.checkout-form label {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font-body-family);
+    color: var(--color-foreground);
+    letter-spacing: 0.25px;
+    line-height: 1.4;
+    display: block;
+}
+
+.cart-shipping-wrap select,
+.checkout-form select,
+.checkout-form input {
+    width: 100%;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin-top: 8px;
+    padding: 0 15px;
+    box-shadow: none;
+    display: block;
+    font-size: 14px;
+}
+
+.cart-shipping-wrap select,
+.checkout-form select {
+    cursor: pointer;
+}
+
+.cart-shipping-wrap select:focus-visible,
+.cart-shipping-wrap select:focus,
+.checkout-form select:focus-visible,
+.checkout-form select:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0.1);;
+}
+
+.checkout-form-heading {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 8px;
+}
+
+.checkout-form .filter-label {
+    display: flex;
+}
+
+.checkout-form .filter-checkbox {
+    display: inline-block;
+}
+
+.checkout-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.checkout-button .button, 
+.checkout-button .button:hover, 
+.checkout-button .button:focus {
+    min-width: calc(50% - 24px);
+}
+
+.checkout-button .button-secondary {
+    border-color: rgba(var(--color-secondary-button-border), 1);
+}
+
+.checkout-total-area > div + div,
+.checkout-sidebar > div + div {
+    margin-top: 24px;
+}
+
+.checkout-total-area {
+    padding: 32px;
+    background-color: rgba(var(--color-background), 1);
+    border-radius: 6px;
+}
+
+.checkout-total-area .minicart-item {
+    padding: 0;
+    align-items: center;
+}
+
+.checkout-total-area .minicart-item:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 991px) {
+    .checkout-profile {
+        padding: 20px;
+    }
+
+    .checkout-profile .user-name {
+        font-size: 18px;
+    }
+
+    .checkout-profile .edit-text {
+        font-size: 12px;
+    }
+
+    .checkout-profile .button, 
+    .checkout-profile .button:hover, 
+    .checkout-profile .button:focus {
+        min-width: 150px;
+        height: 48px;
+    }
+
+    .checkout-form-heading {
+        font-size: 18px;
+    }
+
+    .checkout-form label {
+        font-size: 13px;
+    }
+
+    .checkbox-text {
+        font-size: 14px;
+    }
+
+    .checkout-total-area {
+        padding: 24px;
+    }
+
+    .checkout-total-area .product-info {
+        margin-top: 0;
+        padding-left: 10px;
+    }
+
+    .cart-chekcout-button {
+        height: 48px;
+    }
+
+    .checkout-button .button, 
+    .checkout-button .button:hover, 
+    .checkout-button .button:focus {
+        height: 52px;
+    }
+
+    .checkout-sidebar {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .checkout-sidebar {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 425px) {
+    .checkout-profile {
+        flex-wrap: wrap;
+    }
+
+    .checkout-profile .user-profile {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .checkout-profile .button, 
+    .checkout-profile .button:hover, 
+    .checkout-profile .button:focus {        
+        height: 44px;
+        margin-top: 24px;
+        font-size: 13px;
+    }
+
+    .checkout-form-heading,
+    .checkout-form-heading {
+        font-size: 14px;
+    }
+
+    .checkout-form label {
+        font-size: 12px;
+    }
+
+    .checkout-form select, 
+    .checkout-form input {
+        font-size: 13px;
+    }
+
+    .checkout-button {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .checkout-button .button, 
+    .checkout-button .button:hover, 
+    .checkout-button .button:focus {
+        height: 48px;
+        font-size: 13px;
+        width: 100%;
+    }
+}

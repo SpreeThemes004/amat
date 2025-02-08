@@ -1,0 +1,21 @@
+.contact-info {
+  text-align: center;
+  background-color: #F7F7F7;
+  padding: 90px 0; }
+
+.contact-info .info-email {
+  margin-top: 16px; }
+
+.contact-info .contact-social,
+.contact-info .info-phone {
+  margin-top: 4px;
+  display: block; }
+
+.contact-social .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }

@@ -1,0 +1,139 @@
+.anounce-bg-black{
+    --color-background: 0, 0, 0;
+    --color-foreground: 255, 255, 255;
+    --color-link: 0, 0, 0;
+}
+
+.annouce-plant{
+    --color-background: 221, 240, 235;
+    --color-foreground: 0, 0, 0;
+}
+
+.announcement-bar {
+    background-color: rgba(var(--color-background), 1);
+    color: rgba(var(--color-foreground), 1);
+    padding: 10px 0;
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.1);
+}
+
+.announcement-bar.annouce-plant {
+    border-bottom: none;
+}
+
+.announcement-has-three-block .announce-text,
+.announcement-has-single-block .announce-text {
+    text-align: center;
+}
+
+.announcement-bar .announcement-meta-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.announcement-contact {
+    display: flex;
+    gap: 24px;
+}
+
+.announcement-contact a + a {
+    position: relative;
+}
+
+.announcement-contact a + a::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    background: rgba(0, 0, 0, 0.3);
+    top: 50%;
+    left: 0;
+    transform: translatey(-50%);
+    margin-left: -13px;
+}
+
+.anounce-bg-black .announcement-contact:last-child a::before {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.announcement-bar * {
+    color: inherit;
+}
+
+.language-list-option,
+.currency-list-option {
+    color: rgba( var(--color-link), 1);
+    position: relative;
+}
+
+.language-list-option:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    transition: width 0.4s ease 0s, left 0.4s ease 0s;
+    width: 0;
+    height: 1px;
+    right: 0;
+    left: auto;
+    bottom: 1px;
+}
+
+.language-list-option:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.currency-list-option {
+    display: flex;
+    align-items: center;
+}
+
+.announcement-meta {
+    display: flex;
+    position: relative;
+    gap: 24px;
+}
+
+.announcement-meta > div + div {
+    position: relative;
+}
+
+.announcement-meta > div + div:before {
+    content: '';
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: -14px;
+}
+
+.anounce-bg-black .announcement-meta > div + div:before {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.flag {
+    min-width: 20px;
+    max-width: 20px;
+    margin-right: 7px;
+}
+
+.currency-list-item,
+.language-list-item {
+    padding: 3px 5px;
+}
+
+.language-list,
+.currency-list {
+    min-width: auto;
+    padding: 8px;
+}
+
+
+@media (max-width: 991px) {
+    .announcement-bar .text_16 {
+        font-size: 14px;
+    }
+}

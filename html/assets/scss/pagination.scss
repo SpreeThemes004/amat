@@ -1,0 +1,125 @@
+.pagination-item{
+    --color-background: 247, 247, 247;
+}
+
+.pagination-next{
+    --color-background: 0, 0, 0;
+}
+
+
+.pagination-item.active,
+.pagination-item:hover {
+    --color-background: 0, 0, 0;
+}
+
+.pagination-item.active > .pagination-link,
+.pagination-item:hover > .pagination-link {
+    --color-foreground: 255, 255, 255;
+}
+
+.pagination-item.disabled:hover{
+    --color-background: 0, 0, 0;
+}
+
+.pagination-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 16px;
+}
+
+.pagination-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(var(--color-background), 1);
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.pagination-item.active,
+.pagination-item:hover {
+    background-color: rgba(var(--color-background), 1);
+}
+
+.pagination-item.active > .pagination-link,
+.pagination-item:hover > .pagination-link {
+    color: rgba(var(--color-foreground), 1);
+}
+
+.pagination-item.disabled.active > .pagination-link,
+.pagination-item.disabled:hover > .pagination-link {
+    color: rgba(var(--color-foreground), 0.5);
+}
+
+.pagination-item.disabled:hover{
+    background-color: rgba(var(--color-background), 0.7);
+}
+
+.pagination-style-2 .pagination-nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    gap: 8px;
+}
+
+.pagination-style-2 .pagination-next {
+    margin-left: 48px;
+}
+
+.pagination-style-2 .pagination-next:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background: rgba(var(--color-background), 0.5);
+    left: -24px;
+}
+
+.product-review .section-pagination,
+.product-details-tab .section-pagination {
+    margin-top: 48px;
+}
+
+@media (max-width: 575px) {
+    .pagination-item {
+        width: 30px;
+        height: 30px;
+    }
+
+    .pagination-link {
+        font-size: 14px;
+    }
+
+    .pagination-style-2 .pagination-next {
+        margin-left: 20px;
+    }
+
+    .pagination-style-2 .button-cta {
+        font-size: 13px;
+    }
+
+    .pagination-style-2 .pagination-icon .icon_24 {
+        width: 18px;
+        height: 18px;
+    }
+
+    .pagination-style-2 .pagination-next:before {
+        content: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .pagination-style-2 .button-cta {
+        font-size: 11px;
+    }
+}

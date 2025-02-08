@@ -1,0 +1,31 @@
+.featured-image {
+  --color-background: 247, 247 , 247; }
+
+.featured-product {
+  margin-top: 42px;
+  display: block; }
+
+.featured-product:hover .featured-image {
+  outline-color: #000; }
+
+.featured-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(var(--color-background), 1);
+  border-radius: 50%;
+  outline: 1px solid transparent;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.featured-title {
+  margin-top: 24px;
+  display: block;
+  text-align: center; }
+
+@media (max-width: 767px) {
+  .featured-title.text_18 {
+    font-size: 16px; }
+  .featured-product {
+    margin-top: 24px; } }

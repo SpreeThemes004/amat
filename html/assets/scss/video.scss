@@ -1,0 +1,132 @@
+.video-preview .video-preview-wrap {
+    --color-foreground: 255, 255, 255;
+}
+
+.video-container {
+    position: relative;
+    z-index: 9;
+}
+
+.video-tools {
+    min-height: 600px;
+}
+
+.video-section {
+    overflow: hidden;
+}
+
+.video-button,
+.video-button:hover,
+.video-button:focus {
+    width: 140px;
+    height: 140px;
+    border: 2px solid #fefefe;
+    @include prefix(display, flex, ms webkit spec);
+    @include prefix(align-items, center, ms webkit spec);
+    @include prefix(justify-content, center, ms webkit spec);
+    @include prefix(border-radius, 50%, ms webkit spec);
+}
+
+.video-main {
+    overflow: hidden;
+    height: 85vh;
+    width: 100%;
+    position: relative;
+}
+
+.video-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 9;
+    transition: opacity .8s ease-in-out;
+}
+
+.playing .video-layer {
+    opacity: 1;
+}
+
+.video-layer iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.video-preview {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: opacity .8s ease-in-out;
+}
+
+.video-preview .video-preview-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    gap: 24px;
+}
+
+.video-contents {
+    max-width: 620px;
+}
+
+.video-preview .video-preview-wrap .poster-content-text {
+    max-width: 570px;
+}
+
+.video-preview .video-preview-wrap .poster-text,
+.video-preview .video-preview-wrap .poster-heading {
+    color: rgba(var(--color-foreground), 1);
+}
+
+.video-preview .video-preview-wrap .poster-text {
+    margin-top: 8px;
+}
+
+.playing .video-preview {
+    opacity: 0;
+}
+
+.video-main .icon {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .video-main .icon {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 767px) {
+    .video-main .icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .video-main {
+        height: 500px;
+    }
+
+    .video-preview .video-preview-wrap {
+        flex-direction: column;
+    }
+
+    .video-preview .video-preview-wrap .poster-heading {
+        font-size: 32px;
+    }
+
+    .video-contents {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

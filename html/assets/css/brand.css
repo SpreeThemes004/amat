@@ -1,0 +1,105 @@
+.section-brand {
+  --color-background: 247, 247, 247; }
+
+.section-brand-slider {
+  --color-background: transparent; }
+
+.section-brand {
+  background-color: rgba(var(--color-background), 1);
+  overflow: hidden; }
+
+.brand-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200%;
+  -webkit-animation: marqueeSlide 30s linear infinite;
+  animation: marqueeSlide 30s linear infinite;
+  gap: 120px; }
+
+.brand-wrap:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused; }
+
+.brand-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 45px 0;
+  width: 100%;
+  margin: 0;
+  gap: 120px; }
+
+.brand-style-2 .brand-list {
+  padding: 32px 0; }
+
+.brand-item {
+  max-width: 135px;
+  height: auto; }
+
+.section-brand-slider {
+  background: rgba(var(--color-background), 1); }
+
+.section-brand-slider .section-header {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.brand-logo-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.brand-slider-wrap {
+  margin-top: 40px; }
+
+.brand-header-text {
+  margin-top: 15px; }
+
+@-webkit-keyframes marqueeSlide {
+  form {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); } }
+
+@keyframes marqueeSlide {
+  form {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .brand-wrap {
+    gap: 80px; }
+  .brand-list {
+    gap: 80px; } }
+
+@media (max-width: 991px) {
+  .brand-wrap {
+    gap: 50px; }
+  .brand-wrap {
+    width: 250%; }
+  .brand-list {
+    gap: 50px; } }
+
+@media (max-width: 767px) {
+  .brand-list {
+    padding: 32px 0; }
+  .brand-wrap {
+    width: 300%; } }
+
+@media (max-width: 425px) {
+  .brand-wrap {
+    width: 400%; } }

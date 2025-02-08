@@ -1,0 +1,41 @@
+.breadcrumb-with-bg,
+.section-breadcrumb {
+    --color-background: 0, 0, 0;
+}
+
+.section-breadcrumb {
+    margin-top: 30px;
+}
+
+.breadcrumb-list {
+    display: flex;
+    gap: 32px;
+    position: relative;
+    margin: 0;
+}
+
+.breadcrumb-element:not(:first-child):before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    background: rgba(var(--color-background), 0.4);
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -18px;
+    rotate: 20deg;
+}
+
+.breadcrumb-bg-img img {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.breadcrumb-style-2 .breadcrumb-list {
+    justify-content: center;
+}
+
+.breadcrumb-content {
+    text-align: center;
+}

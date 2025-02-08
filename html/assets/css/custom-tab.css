@@ -1,0 +1,65 @@
+.tab-button {
+  --color-background: 0, 0, 0; }
+
+.tab-heading {
+  margin-bottom: 24px; }
+
+.tab-heading .section-heading {
+  margin: 0; }
+
+.tab-button {
+  color: rgba(var(--color-foreground), 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative; }
+
+.tab-button::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  background-color: rgba(var(--color-background), 1);
+  display: inline-block;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  left: auto; }
+
+.tab-button.active::after {
+  width: 100%;
+  left: 0; }
+
+.tab-button.active {
+  color: rgba(var(--color-foreground), 1); }
+
+.custom-tablist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 64px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.custom-tab-button {
+  text-align: center;
+  margin-top: 42px; }
+
+@media (max-width: 575px) {
+  .custom-tablist {
+    gap: 18px; }
+  .tab-button.text.text_14 {
+    font-size: 12px; }
+  .custom-tab-button .button,
+  .custom-tab-button .button:hover,
+  .custom-tab-button .button:focus {
+    min-width: 170px;
+    height: 48px;
+    font-size: 12px; } }
