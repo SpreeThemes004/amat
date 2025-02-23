@@ -166,9 +166,8 @@
 }
 
 .blog-card .blog-content {
-    margin-top: 16px;
+    margin-top: 20px;
 }
-
 
 .blog-image {
     display: flex;
@@ -276,7 +275,7 @@
 .blog-card-2 .blog-author {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 5px;
 }
 
 .blog-card-2 .blog-publish {
@@ -486,6 +485,12 @@
 
 .blog-page .blog-list-wrap {
     margin-top: -42px;
+}
+
+.author-icon,
+.calender-icon {
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 991px) {    

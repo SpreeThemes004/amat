@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
 Theme Name: Amat - Multipurpose Bootstrap 5 eCommerce Template
-Theme URI: https://github.com/SpreeThemes004/amat
+Theme URI: https://spreethemes004.github.io/amat/
 Author: Spree Themes
 Author URI: https://themeforest.net/user/spreethemes/portfolio
 Description: Amat – eCommerce HTML template is a clean, modern and well organized template. It's suitable for all store and this template can be easily customized.
@@ -1006,8 +1006,12 @@ img {
 .category-btn {
   --color-background: 247, 247, 247; }
 
-.header-1 {
+.header-3 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+header:not(.header-3) {
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25); }
 
 .header-cat-menu::before {
   --color-background: 0, 0, 0; }
@@ -2150,6 +2154,11 @@ button.menu-tab-button.active {
 .minicart-footer .minicart-btn-area {
   gap: 16px; }
 
+.minicart-btn-area {
+  --color-secondary-button-hover: 0, 0, 0;
+  --color-secondary-button-text-hover: 255, 255, 255;
+  --color-secondary-button-border-hover: 0, 0, 0; }
+
 .minicart-item .misc {
   padding-top: 24px; }
 
@@ -2198,12 +2207,13 @@ button.menu-tab-button.active {
   display: none; }
 
 .quantity {
-  width: 90px;
+  width: 176px;
+  height: 46px;
   border: 1px solid rgba(var(--color-foreground), 0.2); }
 
 .quantity .qty-btn {
-  width: 32px;
-  padding: 8px 4px;
+  width: 46px;
+  padding: 12px 4px;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2253,6 +2263,11 @@ button.menu-tab-button.active {
   font-size: 12px;
   min-width: calc(50% - 8px); }
 
+@media (max-width: 767px) {
+  .quantity {
+    width: 160px;
+    height: 40px; } }
+
 @media (max-width: 425px) {
   .minicart-calc .text_16,
   .product-title .text_16 {
@@ -2280,8 +2295,6 @@ hero-slider {
   --color-button-hover: 68, 68, 68;
   --color-button-text-hover: 255, 255, 255;
   --color-button-border-hover: 68, 68, 68;
-  --color-secondary-button-text: 255, 255, 255;
-  --color-secondary-button-text-hover: 255, 255, 255;
   --swiper-navigation-size: 100px;
   --swiper-navigation-color: 255, 255, 255;
   --swiper-navigation-background-color: transparent;
@@ -4029,10 +4042,8 @@ accordion-menu.review-content {
 .image-text-card {
   --color-background: 0, 0, 0;
   --color-foreground: 255, 255, 255;
-  --color-secondary-button-text: 255, 255, 255;
   --color-heading: 255, 255, 255;
-  --opacity-overlay: 0.3;
-  --color-secondary-button-text-hover: 255, 255, 255; }
+  --opacity-overlay: 0.3; }
 
 .image-text-card.image-text-card-plant {
   --font-heading-weight: 600; }
@@ -4327,6 +4338,11 @@ accordion-menu.review-content {
 
 .hero-banner .hero-button {
   margin-top: 32px; }
+
+.hero-banner-bag .button-secondary:focus,
+.hero-banner-bag .button-secondary:hover {
+  --color-secondary-button-hover: 255, 255, 255;
+  --color-secondary-button-text-hover: 0, 0, 0; }
 
 .hero-banner-2 .content-box {
   max-width: 450px;
@@ -5082,7 +5098,7 @@ accordion-menu.review-content {
   --font-cta-weight: 400; }
 
 .blog-card .blog-content {
-  margin-top: 16px; }
+  margin-top: 20px; }
 
 .blog-image {
   display: -webkit-box;
@@ -5196,7 +5212,7 @@ accordion-menu.review-content {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 4px; }
+  gap: 5px; }
 
 .blog-card-2 .blog-publish {
   display: -webkit-box;
@@ -5409,6 +5425,15 @@ accordion-menu.review-content {
 
 .blog-page .blog-list-wrap {
   margin-top: -42px; }
+
+.author-icon,
+.calender-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 @media (max-width: 991px) {
   .blog-card-3 {
@@ -6896,7 +6921,7 @@ accordion-menu.review-content {
   --font-cta-weight: 400; }
 
 .blog-card .blog-content {
-  margin-top: 16px; }
+  margin-top: 20px; }
 
 .blog-image {
   display: -webkit-box;
@@ -7010,7 +7035,7 @@ accordion-menu.review-content {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 4px; }
+  gap: 5px; }
 
 .blog-card-2 .blog-publish {
   display: -webkit-box;
@@ -7223,6 +7248,15 @@ accordion-menu.review-content {
 
 .blog-page .blog-list-wrap {
   margin-top: -42px; }
+
+.author-icon,
+.calender-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 @media (max-width: 991px) {
   .blog-card-3 {
@@ -8831,7 +8865,7 @@ accordion-menu.review-content {
   margin-top: 32px; }
 
 .footer-logo img {
-  width: auto; }
+  width: 170px; }
 
 .footer-menu {
   display: -webkit-box;
@@ -9200,7 +9234,9 @@ accordion-menu.review-content {
   .footer-payment {
     margin-top: 40px; }
   .footer-bg .footer-top {
-    padding: 60px 0; } }
+    padding: 60px 0; }
+  .footer-logo img {
+    width: 100px; } }
 
 @media (max-width: 575px) {
   .terms-condition-list {

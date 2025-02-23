@@ -71,6 +71,12 @@
     gap: 16px;
 }
 
+.minicart-btn-area {
+    --color-secondary-button-hover: 0, 0, 0;
+    --color-secondary-button-text-hover: 255, 255, 255;
+    --color-secondary-button-border-hover: 0, 0, 0;
+}
+
 .minicart-item .misc {
     padding-top: 24px;
 }
@@ -126,13 +132,14 @@
 }
 
 .quantity {
-    width: 90px;
+    width: 176px;
+    height: 46px;
     border: 1px solid rgba(var(--color-foreground), 0.2);
 }
 
 .quantity .qty-btn {
-    width: 32px;
-    padding: 8px 4px;
+    width: 46px;
+    padding: 12px 4px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -184,6 +191,13 @@
     height: 48px;
     font-size: 12px;
     min-width: calc(50% - 8px);
+}
+
+@media (max-width: 767px) {
+    .quantity {
+        width: 160px;
+        height: 40px;
+    }
 }
 
 @media (max-width: 425px) {

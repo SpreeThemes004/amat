@@ -63,6 +63,12 @@
     margin-top: 32px;
 }
 
+.hero-banner-bag .button-secondary:focus,
+.hero-banner-bag .button-secondary:hover {
+    --color-secondary-button-hover: 255, 255, 255;
+    --color-secondary-button-text-hover: 0, 0, 0;
+}
+
 // Hero banner style 2
 .hero-banner-2 .content-box {
     max-width: 450px;
